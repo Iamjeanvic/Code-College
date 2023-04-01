@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+int nota;
+int notaMaior =0 ,notaMenor = 0;
+Scanner leitor = new Scanner(System.in);
+for(int i=1;i<=5;i++){
+  System.out.println("Digita a sua nota");
+nota = leitor.nextInt();
+if (i == 1) {
+                notaMaior = nota;
+                notaMenor = nota;
+            }
+            else{
+                if (nota < notaMenor) {
+                    notaMenor =nota;
+                }
+                if (nota > notaMaior){
+                    notaMaior = nota;
+                }
+            }
+}
+  System.out.println("Maior nota :  " +  notaMaior);
+  System.out.println("Menor nota :  " +  notaMenor);
+
+
+	}	
+}
