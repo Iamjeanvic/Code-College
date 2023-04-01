@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	double temp,tempTotal=0,menortemp=9999;
+	Scanner teclado = new Scanner(System.in);
+    for (int a = 1; a <= 5 ; a++) {
+    System.out.print("Digite a " + a + "a. temperatura : " );
+    temp = teclado.nextDouble();
+    if(temp < menortemp){
+    menortemp = temp;
+    }
+    tempTotal=tempTotal+temp;
+    }
+    double media;
+    media = tempTotal/5;
+    System.out.println("a media é " + media);
+    System.out.println("a menor temperatura é : " + menortemp);
+
+
+    }
+	}
