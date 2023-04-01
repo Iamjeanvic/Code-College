@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+ public static void main (String[]args)
+ {
+   double v[] = new double[5];
+   int i;
+   for (i = 0; i < 5; i++)
+     {
+System.out.print ("Digite o " + (i + 1) + " valor: ");
+Scanner valordigitado = new Scanner (System.in);
+  v[i] = valordigitado.nextDouble ();
+     }
+   System.out.println (" ");
+   System.out.println ("-------RESPOSTA-------");
+   for (i = 0; i < 5; i++)
+     {
+System.out.println ("O dobro de " + v[i] + " é: " + (v[i] * 2));
+     }
+   System.out.println ("---------------------");
+ }
+}
