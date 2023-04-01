@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	int peso,idade,idadem=0;
+	int peso70=0;
+	Scanner leitor = new Scanner(System.in);
+for(int i=7;i>=1;i--){
+System.out.println("Digite a sua idade e peso  ");
+idade = leitor.nextInt();
+idadem = idadem + idade;
+peso= leitor.nextInt();
+if(peso>90){
+peso70= peso70 + 1;
+}
+    System.out.println(" Total de pessoas com mais de 90k  " + peso70);
+
+	}
+	double media;
+media = idadem/7;
+    System.out.println(" A media de idade é  " + media);
+
+	}
+}
