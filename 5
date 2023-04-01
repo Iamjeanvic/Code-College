@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	String sexo;
+	float peso;
+	int contM=0, contF=0;
+	Scanner leitor = new Scanner(System.in);
+
+for(int i=0;i<=9;i++){
+    System.out.println("Digite seu sexo " + (i+1));
+     System.out.println("m = masculino é f = feminino");
+    sexo=leitor.next();
+    System.out.println("Digite seu peso");
+
+    peso=leitor.nextFloat();
+if(sexo.equals("m")&&peso>=60&&peso<=80){
+contM=contM + 1;
+}
+else if(sexo.equals("f")&&peso>=50 &&peso<=70){
+contF=contF + 1;
+    }
+	}
+	System.out.println(" sexo masculino que possui peso entre 60 e 80 : " +contM);
+	System.out.println("sexo feminino que possui peso entre 50 e 70 : "+contF);
+	}
+}
